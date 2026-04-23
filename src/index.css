@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Anton", sans-serif;
+  --font-mono: "Space Mono", monospace;
+  
+  --color-brand-black: #0a0a0a;
+  --color-brand-white: #f5f5f5;
+  --color-brand-red: #e63232;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-white text-brand-black font-mono selection:bg-brand-red selection:text-white antialiased;
+  }
+}
+
+@layer components {
+  .section-border {
+    @apply border-b-2 border-brand-black;
+  }
+  
+  .cta-btn {
+    @apply inline-block bg-brand-red text-brand-white font-display text-lg px-8 py-4 uppercase tracking-wider transition-all hover:brightness-110 active:translate-y-1;
+  }
+
+  .cta-btn-outline {
+    @apply inline-block border-2 border-brand-black text-brand-black font-display text-lg px-8 py-4 uppercase tracking-wider transition-all hover:bg-brand-black hover:text-brand-white active:translate-y-1;
+  }
+}

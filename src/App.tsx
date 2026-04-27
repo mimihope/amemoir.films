@@ -214,23 +214,24 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <motion.div {...fadeInUp} className="text-[10px] text-brand-red font-bold uppercase tracking-[0.2em] mb-8">Pricing</motion.div>
           <motion.h2 {...fadeInUp} className="font-display text-3xl md:text-5xl uppercase mb-2">Pick Your Memoir.</motion.h2>
-          <motion.p {...fadeInUp} transition={{ delay: 0.2 }} className="text-xs text-gray-500 mb-12">Every tier ends with a film. It's just a question of how deep we go.</motion.p>
+          <motion.p {...fadeInUp} transition={{ delay: 0.2 }} className="text-xs text-gray-500 mb-12 uppercase tracking-wide">Every tier ends with a film. It's just a question of how deep we go.</motion.p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
             {/* TIER 1 */}
             <motion.div 
               {...fadeInUp}
               transition={{ delay: 0.1, duration: 0.8 }}
               className="bg-[#111] border-2 border-[#333] p-8 flex flex-col hover:border-white/30 transition-colors"
             >
-              <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">Tier 01</div>
-              <div className="font-display text-2xl uppercase mb-4">The Film</div>
-              <p className="text-xs text-gray-500 mb-8 leading-relaxed uppercase font-bold tracking-tight">We come, we shoot, we make your documentary. Clean and complete.</p>
-              <ul className="text-[9px] space-y-3 mb-10 text-gray-400 border-t border-white/5 pt-6 uppercase font-bold tracking-widest">
-                <li className="flex items-center">FULL DOCUMENTARY SHOOT</li>
-                <li className="flex items-center">CINEMATIC EDITING & SCORE</li>
-                <li className="flex items-center">DIGITAL FILM DELIVERY</li>
-              </ul>
+              <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 01</div>
+              <div className="font-display text-2xl uppercase mb-2">The Short</div>
+              <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">The vibe of your set — bottled into one film. Fast, fun, and everyone's in it.</p>
+              <div className="text-[10px] space-y-4 mb-10 text-gray-400 border-t border-white/5 pt-6 tracking-wide leading-relaxed">
+                <div>🎬 <span className="text-brand-white">1 shoot day</span> — your sign-out, last paper, or water-splash moment</div>
+                <div>🎤 <span className="text-brand-white">Vox pops</span> with students from across the class</div>
+                <div>🎵 <span className="text-brand-white">Music-driven edit</span> — high energy, cinematic</div>
+                <div>⏱ <span className="text-brand-white">10–15 minute film</span></div>
+              </div>
               <a 
                 href="https://wa.me/message/GRVIOIHB5XSCE1" 
                 target="_blank" 
@@ -252,17 +253,18 @@ export default function App() {
                 transition={{ duration: 2, repeat: Infinity }}
                 className="absolute top-0 right-0 bg-brand-red text-brand-white px-3 py-1 font-display uppercase tracking-widest text-[9px] -translate-y-1/2 -mr-1"
               >
-                MOST CHOSEN
+                MOST POPULAR
               </motion.div>
-              <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">Tier 02</div>
-              <div className="font-display text-2xl uppercase mb-4">The Full Story</div>
-              <p className="text-xs text-gray-500 mb-8 leading-relaxed uppercase font-bold tracking-tight">We're there for the whole final chapter — events, FYB week, the real stuff.</p>
-              <ul className="text-[9px] space-y-3 mb-10 text-gray-400 border-t border-white/5 pt-6 uppercase font-bold tracking-widest">
-                <li className="flex items-center text-brand-red">• EVERYTHING IN TIER 01</li>
-                <li className="flex items-center text-brand-red">• PRESENT AT DEPT EVENTS</li>
-                <li className="flex items-center text-brand-red">• FULL FYB WEEK COVERAGE</li>
-                <li className="flex items-center text-brand-red">• RICHER, DEEPER FILM</li>
-              </ul>
+              <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 02</div>
+              <div className="font-display text-2xl uppercase mb-2">The Full Story</div>
+              <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">From Jambite to Graduate. The full journey — the struggle, the growth, the victory.</p>
+              <div className="text-[10px] space-y-4 mb-10 text-gray-400 border-t border-white/5 pt-6 tracking-wide leading-relaxed">
+                <div>🎬 <span className="text-brand-red">Multiple shoot days</span> — campus life, events, the real stuff</div>
+                <div>🎉 <span className="text-brand-red">FYB week covered</span> — Costume Day, Old School Day, all of it</div>
+                <div>🎙 <span className="text-brand-red">Interviews</span> with class reps, standout students, even that one lecturer</div>
+                <div>📖 <span className="text-brand-red">Chapters:</span> The Beginning → The Struggle → The Victory</div>
+                <div>⏱ <span className="text-brand-red">20–35 minute film</span></div>
+              </div>
               <a 
                 href="https://wa.me/message/GRVIOIHB5XSCE1" 
                 target="_blank" 
@@ -279,14 +281,20 @@ export default function App() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="bg-[#111] border-2 border-[#333] p-8 flex flex-col hover:border-white/30 transition-colors"
             >
-              <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">Tier 03</div>
-              <div className="font-display text-2xl uppercase mb-4">The Premiere</div>
-              <p className="text-xs text-gray-500 mb-8 leading-relaxed uppercase font-bold tracking-tight">You watch your film together. Lights down. In the room. One last time.</p>
-              <ul className="text-[9px] space-y-3 mb-10 text-gray-400 border-t border-white/5 pt-6 uppercase font-bold tracking-widest">
-                <li className="flex items-center text-brand-red-white">• EVERYTHING IN TIER 02</li>
-                <li className="flex items-center text-brand-red-white">• ORGANIZED FILM PREMIERE</li>
-                <li className="flex items-center text-brand-red-white">• THE FULL RED CARPET</li>
-              </ul>
+              <div className="absolute top-0 right-0 bg-yellow-500 text-brand-black px-3 py-1 font-display uppercase tracking-widest text-[9px] -translate-y-1/2 -mr-1">
+                FULL EXPERIENCE
+              </div>
+              <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 03</div>
+              <div className="font-display text-2xl uppercase mb-2">The Premiere</div>
+              <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">The full movie treatment. Your department becomes a feature film — and you all watch it together.</p>
+              <div className="text-[10px] space-y-4 mb-10 text-gray-400 border-t border-white/5 pt-6 tracking-wide leading-relaxed">
+                <div>🎬 <span className="text-brand-white">All-access coverage</span> — every semester milestone</div>
+                <div>😂 <span className="text-brand-white">Bloopers + BTS</span> included</div>
+                <div>💌 <span className="text-brand-white">"Future Self" messages</span> — every student, on camera</div>
+                <div>🎟 <span className="text-brand-white">Private premiere</span> — cinema night or dinner screening</div>
+                <div>💾 <span className="text-brand-white">Physical keepsake</span> — custom USB or plaque</div>
+                <div>⏱ <span className="text-brand-white">40–60+ minute feature film</span></div>
+              </div>
               <a 
                 href="https://wa.me/message/GRVIOIHB5XSCE1" 
                 target="_blank" 
@@ -296,6 +304,42 @@ export default function App() {
                 GET A QUOTE →
               </a>
             </motion.div>
+          </div>
+
+          <motion.div {...fadeInUp} className="text-[10px] text-brand-red font-bold uppercase tracking-[0.2em] mb-6">At a glance</motion.div>
+          <div className="overflow-x-auto border-t-2 border-brand-red/20 pt-8">
+            <table className="w-full text-left font-sans text-xs border-collapse">
+              <thead>
+                <tr className="border-b border-[#333]">
+                  <th className="py-4 font-display uppercase tracking-widest text-[10px] text-gray-500">What you get</th>
+                  <th className="py-4 px-4 text-center"><span className="bg-[#333] px-3 py-1 rounded-full uppercase text-[9px] font-bold">The Short</span></th>
+                  <th className="py-4 px-4 text-center"><span className="bg-brand-red/20 text-brand-red px-3 py-1 rounded-full uppercase text-[9px] font-bold">The Full Story</span></th>
+                  <th className="py-4 px-4 text-center"><span className="bg-yellow-500/10 text-yellow-500 px-3 py-1 rounded-full uppercase text-[9px] font-bold">The Premiere</span></th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-400">
+                {[
+                  { label: "Shoot days", sub: "Days on ground", t1: "1 day", t2: "Several days", t3: "All semester" },
+                  { label: "FYB week coverage", sub: "Costume/Old School Day", t1: "—", t2: "YES", t3: "YES", highlight: true },
+                  { label: "Student interviews", sub: "Real conversations", t1: "Vox pops", t2: "In-depth", t3: "Everyone" },
+                  { label: "Lecturer appearance", sub: "Your favorites", t1: "—", t2: "YES", t3: "YES" },
+                  { label: "Film length", sub: "Edited and scored", t1: "10-15m", t2: "20-35m", t3: "40-60m+" },
+                  { label: "Private premiere", sub: "Cinema style", t1: "—", t2: "—", t3: "YES", highlight: true },
+                  { label: "Physical keepsake", sub: "USB or Plaque", t1: "—", t2: "—", t3: "YES" },
+                  { label: "Bloopers + Future Self", sub: "The rewatchables", t1: "—", t2: "—", t3: "YES" },
+                ].map((row, i) => (
+                  <tr key={i} className="border-b border-[#222] hover:bg-white/5 transition-colors">
+                    <td className="py-5">
+                      <div className="font-bold text-brand-white uppercase text-[11px] mb-1">{row.label}</div>
+                      <div className="text-[9px] text-gray-600 uppercase tracking-tight">{row.sub}</div>
+                    </td>
+                    <td className={`py-5 px-4 text-center ${row.t1 === "—" ? "text-gray-800" : ""}`}>{row.t1}</td>
+                    <td className={`py-5 px-4 text-center font-bold ${row.t2 === "YES" ? "text-brand-red" : ""}`}>{row.t2}</td>
+                    <td className={`py-5 px-4 text-center font-bold ${row.t3 === "YES" ? "text-yellow-500" : ""}`}>{row.t3}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
       </section>

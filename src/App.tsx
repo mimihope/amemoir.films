@@ -7,6 +7,8 @@ import React from "react";
 import { motion } from "motion/react";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
+import { ChatBot } from "./components/ChatBot";
+
 export default function App() {
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },
@@ -25,13 +27,23 @@ export default function App() {
     <div className="flex flex-col min-h-screen bg-brand-white">
       {/* 00 — NAV */}
       <nav className="bg-brand-black px-7 py-4 flex justify-between items-center z-50">
-        <motion.span 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="font-display text-2xl text-brand-white tracking-widest uppercase"
-        >
-          MEMOIR
-        </motion.span>
+        <div className="flex flex-col">
+          <motion.span 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="font-display text-2xl text-brand-white tracking-widest uppercase leading-none"
+          >
+            MEMOIR
+          </motion.span>
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.1 }}
+            className="text-[9px] text-gray-400 uppercase tracking-[0.2em] mt-1 font-bold"
+          >
+            PARTNERED WITH <span className="text-brand-red">LUMINA</span>
+          </motion.span>
+        </div>
         <motion.span 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -374,7 +386,12 @@ export default function App() {
 
       {/* 07 — FOOTER */}
       <footer className="bg-brand-black px-7 py-10 flex flex-col sm:flex-row justify-between items-center border-t border-white/10 gap-6">
-        <div className="font-display text-2xl text-brand-white italic tracking-tighter">MEMOIR</div>
+        <div className="flex flex-col items-center sm:items-start">
+          <div className="font-display text-2xl text-brand-white italic tracking-tighter">MEMOIR</div>
+          <div className="text-[9px] text-gray-400 uppercase tracking-[0.2em] mt-1 font-bold">
+            IN COLLABORATION WITH <span className="text-brand-red">LUMINA</span>
+          </div>
+        </div>
         <div className="text-[9px] text-gray-600 uppercase tracking-[0.3em] font-bold text-center">
           Made for graduating classes across Nigeria
         </div>
@@ -384,25 +401,7 @@ export default function App() {
       </footer>
 
       {/* FIXED WHATSAPP BUTTON (Mobile Optimization) */}
-      <motion.a 
-        href="https://wa.me/message/GRVIOIHB5XSCE1" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        initial={{ scale: 0, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ delay: 2, type: "spring" }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className="fixed bottom-6 right-6 bg-brand-red text-brand-white p-5 shadow-2xl z-50 border-2 border-brand-black"
-        aria-label="Contact on WhatsApp"
-      >
-        <motion.div
-          animate={{ rotate: [0, 10, -10, 0] }}
-          transition={{ duration: 2, repeat: Infinity, delay: 3 }}
-        >
-          <MessageCircle className="w-8 h-8" />
-        </motion.div>
-      </motion.a>
+      <ChatBot />
 
       <style>{`
         @keyframes ticker {

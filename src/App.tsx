@@ -236,7 +236,8 @@ export default function App() {
               className="bg-[#111] border-2 border-[#333] p-8 flex flex-col hover:border-white/30 transition-colors"
             >
               <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 01</div>
-              <div className="font-display text-2xl uppercase mb-2">The Short</div>
+              <div className="font-display text-2xl uppercase mb-1">The Short</div>
+              <div className="font-display text-3xl text-brand-white mb-4">₦120,000</div>
               <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">The vibe of your set — bottled into one film. Fast, fun, and everyone's in it.</p>
               <div className="text-[10px] space-y-4 mb-10 text-gray-400 border-t border-white/5 pt-6 tracking-wide leading-relaxed">
                 <div>🎬 <span className="text-brand-white">1 shoot day</span> — your sign-out, last paper, or water-splash moment</div>
@@ -254,10 +255,37 @@ export default function App() {
               </a>
             </motion.div>
 
-            {/* TIER 2 - FEATURED */}
+            {/* TIER 2 */}
             <motion.div 
               {...fadeInUp}
               transition={{ delay: 0.3, duration: 0.8 }}
+              className="bg-[#111] border-2 border-[#333] p-8 flex flex-col hover:border-white/30 transition-colors"
+            >
+              <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 02</div>
+              <div className="font-display text-2xl uppercase mb-1">The Full Story</div>
+              <div className="font-display text-3xl text-brand-white mb-4">₦250,000</div>
+              <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">From Jambite to Graduate. The full journey — the struggle, the growth, the victory.</p>
+              <div className="text-[10px] space-y-4 mb-10 text-gray-400 border-t border-white/5 pt-6 tracking-wide leading-relaxed">
+                <div>🎬 <span className="text-brand-white">Multiple shoot days</span> — campus life, events, the real stuff</div>
+                <div>🎉 <span className="text-brand-white">FYB week covered</span> — Costume Day, Old School Day, all of it</div>
+                <div>🎙 <span className="text-brand-white">Interviews</span> with class reps, standout students, even that one lecturer</div>
+                <div>📖 <span className="text-brand-white">Chapters:</span> The Beginning → The Struggle → The Victory</div>
+                <div>⏱ <span className="text-brand-white">20–35 minute film</span></div>
+              </div>
+              <a 
+                href="https://wa.me/message/GRVIOIHB5XSCE1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-[#333] text-brand-white font-display text-sm py-4 uppercase tracking-[0.15em] hover:bg-brand-red transition-colors mt-auto text-center"
+              >
+                GET A QUOTE →
+              </a>
+            </motion.div>
+
+            {/* TIER 3 - FEATURED */}
+            <motion.div 
+              {...fadeInUp}
+              transition={{ delay: 0.5, duration: 0.8 }}
               className="bg-brand-black border-3 border-brand-red p-8 flex flex-col transform md:scale-105 z-10 shadow-2xl relative group"
             >
               <motion.div 
@@ -265,53 +293,25 @@ export default function App() {
                 transition={{ duration: 2, repeat: Infinity }}
                 className="absolute top-0 right-0 bg-brand-red text-brand-white px-3 py-1 font-display uppercase tracking-widest text-[9px] -translate-y-1/2 -mr-1"
               >
-                MOST POPULAR
+                THE BEST OPTION
               </motion.div>
-              <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 02</div>
-              <div className="font-display text-2xl uppercase mb-2">The Full Story</div>
-              <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">From Jambite to Graduate. The full journey — the struggle, the growth, the victory.</p>
+              <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 03</div>
+              <div className="font-display text-2xl uppercase mb-1">The Premiere</div>
+              <div className="font-display text-3xl text-brand-white mb-4">₦480,000</div>
+              <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">The full movie treatment. Your department becomes a feature film — and you all watch it together.</p>
               <div className="text-[10px] space-y-4 mb-10 text-gray-400 border-t border-white/5 pt-6 tracking-wide leading-relaxed">
-                <div>🎬 <span className="text-brand-red">Multiple shoot days</span> — campus life, events, the real stuff</div>
-                <div>🎉 <span className="text-brand-red">FYB week covered</span> — Costume Day, Old School Day, all of it</div>
-                <div>🎙 <span className="text-brand-red">Interviews</span> with class reps, standout students, even that one lecturer</div>
-                <div>📖 <span className="text-brand-red">Chapters:</span> The Beginning → The Struggle → The Victory</div>
-                <div>⏱ <span className="text-brand-red">20–35 minute film</span></div>
+                <div>🎬 <span className="text-brand-red">All-access coverage</span> — every semester milestone</div>
+                <div>😂 <span className="text-brand-red">Bloopers + BTS</span> included</div>
+                <div>💌 <span className="text-brand-red">"Future Self" messages</span> — every student, on camera</div>
+                <div>🎟 <span className="text-brand-red">Private premiere</span> — cinema night or dinner screening</div>
+                <div>💾 <span className="text-brand-red">Physical keepsake</span> — custom USB or plaque</div>
+                <div>⏱ <span className="text-brand-red">40–60+ minute feature film</span></div>
               </div>
               <a 
                 href="https://wa.me/message/GRVIOIHB5XSCE1" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-brand-red text-brand-white font-display text-sm py-4 uppercase tracking-[0.15em] hover:brightness-110 transition-all mt-auto text-center"
-              >
-                GET A QUOTE →
-              </a>
-            </motion.div>
-
-            {/* TIER 3 */}
-            <motion.div 
-              {...fadeInUp}
-              transition={{ delay: 0.5, duration: 0.8 }}
-              className="bg-[#111] border-2 border-[#333] p-8 flex flex-col hover:border-white/30 transition-colors"
-            >
-              <div className="absolute top-0 right-0 bg-yellow-500 text-brand-black px-3 py-1 font-display uppercase tracking-widest text-[9px] -translate-y-1/2 -mr-1">
-                FULL EXPERIENCE
-              </div>
-              <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 03</div>
-              <div className="font-display text-2xl uppercase mb-2">The Premiere</div>
-              <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">The full movie treatment. Your department becomes a feature film — and you all watch it together.</p>
-              <div className="text-[10px] space-y-4 mb-10 text-gray-400 border-t border-white/5 pt-6 tracking-wide leading-relaxed">
-                <div>🎬 <span className="text-brand-white">All-access coverage</span> — every semester milestone</div>
-                <div>😂 <span className="text-brand-white">Bloopers + BTS</span> included</div>
-                <div>💌 <span className="text-brand-white">"Future Self" messages</span> — every student, on camera</div>
-                <div>🎟 <span className="text-brand-white">Private premiere</span> — cinema night or dinner screening</div>
-                <div>💾 <span className="text-brand-white">Physical keepsake</span> — custom USB or plaque</div>
-                <div>⏱ <span className="text-brand-white">40–60+ minute feature film</span></div>
-              </div>
-              <a 
-                href="https://wa.me/message/GRVIOIHB5XSCE1" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-[#333] text-brand-white font-display text-sm py-4 uppercase tracking-[0.15em] hover:bg-brand-red transition-colors mt-auto text-center"
               >
                 GET A QUOTE →
               </a>
@@ -324,9 +324,18 @@ export default function App() {
               <thead>
                 <tr className="border-b border-[#333]">
                   <th className="py-4 font-display uppercase tracking-widest text-[10px] text-gray-500">What you get</th>
-                  <th className="py-4 px-4 text-center"><span className="bg-[#333] px-3 py-1 rounded-full uppercase text-[9px] font-bold">The Short</span></th>
-                  <th className="py-4 px-4 text-center"><span className="bg-brand-red/20 text-brand-red px-3 py-1 rounded-full uppercase text-[9px] font-bold">The Full Story</span></th>
-                  <th className="py-4 px-4 text-center"><span className="bg-yellow-500/10 text-yellow-500 px-3 py-1 rounded-full uppercase text-[9px] font-bold">The Premiere</span></th>
+                  <th className="py-4 px-4 text-center">
+                    <div className="bg-[#333] px-3 py-1 rounded-full uppercase text-[9px] font-bold mb-2">The Short</div>
+                    <div className="text-brand-white font-display text-[10px]">₦120K</div>
+                  </th>
+                  <th className="py-4 px-4 text-center">
+                    <div className="bg-brand-white/10 text-brand-white px-3 py-1 rounded-full uppercase text-[9px] font-bold mb-2">The Full Story</div>
+                    <div className="text-brand-white font-display text-[10px]">₦250K</div>
+                  </th>
+                  <th className="py-4 px-4 text-center">
+                    <div className="bg-brand-red text-brand-white px-3 py-1 rounded-full uppercase text-[9px] font-bold mb-2">The Premiere</div>
+                    <div className="text-brand-white font-display text-[10px]">₦480K</div>
+                  </th>
                 </tr>
               </thead>
               <tbody className="text-gray-400">

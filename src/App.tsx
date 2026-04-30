@@ -35,14 +35,6 @@ export default function App() {
           >
             MEMOIR
           </motion.span>
-          <motion.span
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.1 }}
-            className="text-[9px] text-gray-400 uppercase tracking-[0.2em] mt-1 font-bold"
-          >
-            PARTNERED WITH <span className="text-brand-red">LUMINA</span>
-          </motion.span>
         </div>
         <motion.span 
           initial={{ opacity: 0 }}
@@ -236,8 +228,7 @@ export default function App() {
               className="bg-[#111] border-2 border-[#333] p-8 flex flex-col hover:border-white/30 transition-colors"
             >
               <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 01</div>
-              <div className="font-display text-2xl uppercase mb-1">The Short</div>
-              <div className="font-display text-3xl text-brand-white mb-4">₦160,000</div>
+              <div className="font-display text-2xl uppercase mb-4">The Short</div>
               <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">The vibe of your set — bottled into one film. Fast, fun, and everyone's in it.</p>
               <div className="text-[10px] space-y-4 mb-10 text-gray-400 border-t border-white/5 pt-6 tracking-wide leading-relaxed">
                 <div>🎬 <span className="text-brand-white">1 shoot day</span> — your sign-out, last paper, or water-splash moment</div>
@@ -262,8 +253,7 @@ export default function App() {
               className="bg-[#111] border-2 border-[#333] p-8 flex flex-col hover:border-white/30 transition-colors"
             >
               <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 02</div>
-              <div className="font-display text-2xl uppercase mb-1">The Full Story</div>
-              <div className="font-display text-3xl text-brand-white mb-4">₦290,000</div>
+              <div className="font-display text-2xl uppercase mb-4">The Full Story</div>
               <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">From Jambite to Graduate. The full journey — the struggle, the growth, the victory.</p>
               <div className="text-[10px] space-y-4 mb-10 text-gray-400 border-t border-white/5 pt-6 tracking-wide leading-relaxed">
                 <div>🎬 <span className="text-brand-white">Multiple shoot days</span> — campus life, events, the real stuff</div>
@@ -296,8 +286,7 @@ export default function App() {
                 THE BEST OPTION
               </motion.div>
               <div className="text-[10px] text-brand-red uppercase tracking-[0.2em] mb-2 font-bold">TIER 03</div>
-              <div className="font-display text-2xl uppercase mb-1">The Premiere</div>
-              <div className="font-display text-3xl text-brand-white mb-4">₦520,000</div>
+              <div className="font-display text-2xl uppercase mb-4">The Premiere</div>
               <p className="text-[11px] text-gray-500 mb-6 leading-relaxed uppercase font-bold tracking-tight">The full movie treatment. Your department becomes a feature film — and you all watch it together.</p>
               <div className="text-[10px] space-y-4 mb-10 text-gray-400 border-t border-white/5 pt-6 tracking-wide leading-relaxed">
                 <div>🎬 <span className="text-brand-red">All-access coverage</span> — every semester milestone</div>
@@ -326,15 +315,12 @@ export default function App() {
                   <th className="py-4 font-display uppercase tracking-widest text-[10px] text-gray-500">What you get</th>
                   <th className="py-4 px-4 text-center">
                     <div className="bg-[#333] px-3 py-1 rounded-full uppercase text-[9px] font-bold mb-2">The Short</div>
-                    <div className="text-brand-white font-display text-[10px]">₦160K</div>
                   </th>
                   <th className="py-4 px-4 text-center">
                     <div className="bg-brand-white/10 text-brand-white px-3 py-1 rounded-full uppercase text-[9px] font-bold mb-2">The Full Story</div>
-                    <div className="text-brand-white font-display text-[10px]">₦290K</div>
                   </th>
                   <th className="py-4 px-4 text-center">
                     <div className="bg-brand-red text-brand-white px-3 py-1 rounded-full uppercase text-[9px] font-bold mb-2">The Premiere</div>
-                    <div className="text-brand-white font-display text-[10px]">₦520K</div>
                   </th>
                 </tr>
               </thead>
@@ -397,9 +383,6 @@ export default function App() {
       <footer className="bg-brand-black px-7 py-10 flex flex-col sm:flex-row justify-between items-center border-t border-white/10 gap-6">
         <div className="flex flex-col items-center sm:items-start">
           <div className="font-display text-2xl text-brand-white italic tracking-tighter">MEMOIR</div>
-          <div className="text-[9px] text-gray-400 uppercase tracking-[0.2em] mt-1 font-bold">
-            IN COLLABORATION WITH <span className="text-brand-red">LUMINA</span>
-          </div>
         </div>
         <div className="text-[9px] text-gray-600 uppercase tracking-[0.3em] font-bold text-center">
           Made for graduating classes across Nigeria
